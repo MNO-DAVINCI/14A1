@@ -4,6 +4,11 @@ $action = isset($_GET['action'])?$_GET['action']:null;
 
 switch ($action) {
 	case 'create':
+
+		require("view/header.php");
+		require("view/create.php");
+		require("view/footer.php");
+
 		/*
 			1. Formulier tonen.
 			2. Formulier gegevens in database zetten.
@@ -11,6 +16,11 @@ switch ($action) {
 		break;
 
 	case 'read':
+
+		require("view/header.php");
+		require("view/read.php");
+		require("view/footer.php");
+
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
 			2. Gegevens uit de database weergeven.
@@ -18,6 +28,11 @@ switch ($action) {
 		break;
 
 	case 'update':
+
+		require("view/header.php");
+		require("view/update.php");
+		require("view/footer.php");
+
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
 			2. Gegevens uit de database weergeven in een formulier.
@@ -26,6 +41,11 @@ switch ($action) {
 		break;
 
 	case 'delete':
+
+		require("view/header.php");
+		require("view/delete.php");
+		require("view/footer.php");
+
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
 			2. Gegevens uit database weergeven met bevestigingsvraag.
@@ -34,9 +54,11 @@ switch ($action) {
 		break;
 	
 	default:
-		/*
 
-		*/
+		require("view/header.php");
+		require("view/default.php");
+		require("view/footer.php");
+
 		break;
 }
 
