@@ -4,7 +4,13 @@ $action = isset($_GET['action'])?$_GET['action']:null;
 
 switch ($action) {
 	case 'create':
-		echo "We zitten nu in create!";
+		
+		if (!isset($_POST['submit'])) {
+			//formulier create tonen
+		} else {
+
+		}
+
 		break;
 
 	case 'read':
@@ -21,5 +27,6 @@ switch ($action) {
 	
 	default:
 		echo "We zitten nu in default!";
+		echo "<a href=\"switch.php?action=read\">Linkje!</a>";
 		break;
 }
