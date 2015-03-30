@@ -5,9 +5,9 @@ $action = isset($_GET['action'])?$_GET['action']:null;
 switch ($action) {
 	case 'create':
 
-		require("view/header.php");
-		require("view/create.php");
-		require("view/footer.php");
+		require("view/_template/header.php");
+		require("view/klas/create.php");
+		require("view/_template/footer.php");
 
 		/*
 			1. Formulier tonen.
@@ -17,9 +17,9 @@ switch ($action) {
 
 	case 'read':
 
-		require("view/header.php");
-		require("view/read.php");
-		require("view/footer.php");
+		require("view/_template/header.php");
+		require("view/klas/read.php");
+		require("view/_template/footer.php");
 
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
@@ -29,9 +29,9 @@ switch ($action) {
 
 	case 'update':
 
-		require("view/header.php");
-		require("view/update.php");
-		require("view/footer.php");
+		require("view/_template/header.php");
+		require("view/klas/update.php");
+		require("view/_template/footer.php");
 
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
@@ -42,9 +42,9 @@ switch ($action) {
 
 	case 'delete':
 
-		require("view/header.php");
-		require("view/delete.php");
-		require("view/footer.php");
+		require("view/_template/header.php");
+		require("view/klas/delete.php");
+		require("view/_template/footer.php");
 
 		/*
 			1. Gegevens uit de database lezen (Nodig: ID).
@@ -55,9 +55,9 @@ switch ($action) {
 	
 	default:
 
-		require("view/header.php");
-		require("view/default.php");
-		require("view/footer.php");
+		require("view/_template/header.php");
+		require("view/klas/default.php");
+		require("view/_template/footer.php");
 
 		break;
 }
